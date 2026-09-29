@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MovieLand | فیلم و سریال</title>
+  <meta name="description" content="معرفی و تماشای فیلم و سریال">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    header {
+      background: #15151c;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #e50914;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    .hero {
+      min-height: 420px;
+      padding: 100px 7%;
+      background: linear-gradient(90deg, #09090d, #181820);
+    }
+
+    .hero h1 {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #bbb;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e50914;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .movies {
+      padding: 40px 7%;
+    }
+
+    .movies h2 {
+      margin-bottom: 25px;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .movie-card {
+      background: #17171e;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .poster {
+      height: 270px;
+      background: #292933;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+    }
+
+    .movie-info {
+      padding: 15px;
+    }
+
+    .movie-info h3 {
+      margin-bottom: 8px;
+    }
+
+    .movie-info p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #15151c;
+      text-align: center;
+      padding: 25px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MOVIELAND</div>
+
+  <nav>
+    <a href="#">خانه</a>
+    <a href="#">فیلم‌ها</a>
+    <a href="#">سریال‌ها</a>
+    <a href="#">جدیدترین‌ها</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>دنیای فیلم و سریال</h1>
+  <p>جدیدترین فیلم‌ها و سریال‌ها را اینجا پیدا کنید.</p>
+  <a class="btn" href="#movies">مشاهده فیلم‌ها</a>
+</section>
+
+<section class="movies" id="movies">
+
+  <h2>جدیدترین فیلم‌ها</h2>
+
+  <div class="movie-grid">
+
+    <div class="movie-card">
+      <div class="poster">پوستر فیلم</div>
+      <div class="movie-info">
+        <h3>نام فیلم اول</h3>
+        <p>2026 • اکشن</p>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <div class="poster">پوستر فیلم</div>
+      <div class="movie-info">
+        <h3>نام فیلم دوم</h3>
+        <p>2026 • درام</p>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <div class="poster">پوستر فیلم</div>
+      <div class="movie-info">
+        <h3>نام سریال</h3>
+        <p>2026 • سریال</p>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <div class="poster">پوستر فیلم</div>
+      <div class="movie-info">
+        <h3>نام فیلم چهارم</h3>
+        <p>2025 • علمی تخیلی</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 MovieLand
+</footer>
+
+</body>
+</html>
