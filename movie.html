@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پخش فیلم</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #080a0f;
+            color: white;
+            font-family: Tahoma, Arial, sans-serif;
+            margin: 0;
+        }
+
+        .movie-page {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .movie-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .player {
+            width: 100%;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+        }
+
+        .description {
+            background: #151923;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            color: #bbb;
+            line-height: 2;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            background: #e50914;
+            padding: 10px 18px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="movie-page">
+
+    <a class="back" href="index.html">← برگشت به صفحه اصلی</a>
+
+    <h1 class="movie-title">نام فیلم</h1>
+
+    <div class="player">
+        <video controls poster="">
+            <source src="videos/movie1.mp4" type="video/mp4">
+            مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+        </video>
+    </div>
+
+    <div class="description">
+        <h2>درباره فیلم</h2>
+        <p>
+            توضیحات فیلم را اینجا قرار بده.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
